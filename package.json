@@ -20,7 +20,8 @@
     "path-exists": "^3.0.0",
     "pify": "^2.3.0",
     "revalidator": "^0.3.1",
-    "semver": "^5.3.0"
+    "semver": "^5.3.0",
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -45,7 +46,9 @@
   "scripts": {
     "fetch-docs": "node bin/fetch-docs.js master",
     "generate": "node cli.js test/fixtures/electron --version=1.4.1 --outfile=electron.json && open electron.json",
-    "test": "mocha test/*.js && standard"
+    "test": "mocha test/*.js && standard",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "standard": {
     "env": {
@@ -54,5 +57,6 @@
   },
   "engines": {
     "node": ">=4"
-  }
+  },
+  "snyk": true
 }
