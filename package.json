@@ -16,7 +16,7 @@
     "lodash.pick": "^4.2.1",
     "marky-markdown-lite": "^1.2.0",
     "minimist": "^1.2.0",
-    "ora": "^0.3.0",
+    "ora": "^1.4.0",
     "path-exists": "^3.0.0",
     "pify": "^2.3.0",
     "revalidator": "^0.3.1",
