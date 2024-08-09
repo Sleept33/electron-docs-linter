@@ -5,7 +5,7 @@
   "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
   "bin": "cli.js",
   "dependencies": {
-    "cheerio": "^0.22.0",
+    "cheerio": "^1.0.0",
     "clean-deep": "^2.0.1",
     "decamelize": "^1.2.0",
     "dedent": "^0.6.0",
